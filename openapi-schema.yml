@@ -1,0 +1,683 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /api/v1/user/details:
+    get:
+      operationId: listAccountDetails
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0434\u0430\u043D\u043D\u044B\u043C\u0438 \u043F\
+        \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createAccountDetails
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0434\u0430\u043D\u043D\u044B\u043C\u0438 \u043F\
+        \u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/customer/contact:
+    get:
+      operationId: listContacts
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\
+        \u0430\u043C\u0438 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u0435\
+        \u0439"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createContact
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\
+        \u0430\u043C\u0438 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u0435\
+        \u0439"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateContact
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\
+        \u0430\u043C\u0438 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u0435\
+        \u0439"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyContact
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\
+        \u0430\u043C\u0438 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u0435\
+        \u0439"
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/customer/basket:
+    get:
+      operationId: listBaskets
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u0440\u0437\u0438\u043D\u043E\
+        \u0439 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createBasket
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u0440\u0437\u0438\u043D\u043E\
+        \u0439 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+    put:
+      operationId: updateBasket
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u0440\u0437\u0438\u043D\u043E\
+        \u0439 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+    delete:
+      operationId: destroyBasket
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441 \u043A\u043E\u0440\u0437\u0438\u043D\u043E\
+        \u0439 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F"
+      parameters: []
+      responses:
+        '204':
+          description: ''
+      tags:
+      - api
+  /api/v1/customer/order:
+    get:
+      operationId: listOrders
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u043B\u0443\u0447\u0435\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u043C\
+        \u0435\u0448\u0435\u043D\u0438\u044F \u0437\u0430\u043A\u0430\u0437\u043E\u0432\
+        \ \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\
+        \u043C\u0438"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createOrder
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u043B\u0443\u0447\u0435\u043D\u0438\u044F \u0438 \u0440\u0430\u0437\u043C\
+        \u0435\u0448\u0435\u043D\u0438\u044F \u0437\u0430\u043A\u0430\u0437\u043E\u0432\
+        \ \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F\
+        \u043C\u0438"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/partner/state:
+    get:
+      operationId: listPartnerStates
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441\u043E \u0441\u0442\u0430\u0442\u0443\u0441\
+        \u043E\u043C \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0430"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+    post:
+      operationId: createPartnerState
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0440\u0430\
+        \u0431\u043E\u0442\u044B \u0441\u043E \u0441\u0442\u0430\u0442\u0443\u0441\
+        \u043E\u043C \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0430"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/partner/orders:
+    get:
+      operationId: listPartnerOrders
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u043B\u0443\u0447\u0435\u043D\u0438\u044F \u0437\u0430\u043A\u0430\u0437\u043E\
+        \u0432 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\u0430\u043C\u0438"
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/categories:
+    get:
+      operationId: listCategorys
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u0440\
+        \u043E\u0441\u043C\u043E\u0442\u0440\u0430 \u043A\u0430\u0442\u0435\u0433\u043E\
+        \u0440\u0438\u0439"
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Category'
+          description: ''
+      tags:
+      - api
+  /api/v1/shops:
+    get:
+      operationId: listShops
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u0440\
+        \u043E\u0441\u043C\u043E\u0442\u0440\u0430 \u0441\u043F\u0438\u0441\u043A\u0430\
+        \ \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u043E\u0432"
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Shop'
+          description: ''
+      tags:
+      - api
+  /api/v1/products/:
+    get:
+      operationId: listProductInfos
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u0438\u0441\u043A\u0430 \u0442\u043E\u0432\u0430\u0440\u043E\u0432"
+      parameters:
+      - name: page
+        required: false
+        in: query
+        description: A page number within the paginated result set.
+        schema:
+          type: integer
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                    example: 123
+                  next:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=4
+                  previous:
+                    type: string
+                    nullable: true
+                    format: uri
+                    example: http://api.example.org/accounts/?page=2
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ProductInfo'
+          description: ''
+      tags:
+      - api
+  /api/v1/products/{id}/:
+    get:
+      operationId: retrieveProductInfo
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u0438\u0441\u043A\u0430 \u0442\u043E\u0432\u0430\u0440\u043E\u0432"
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductInfo'
+          description: ''
+      tags:
+      - api
+  /api/v1/user/register:
+    post:
+      operationId: createRegisterAccount
+      description: "\u0414\u043B\u044F \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\
+        \u0446\u0438\u0438 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u0435\
+        \u0439"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/user/register/confirm:
+    post:
+      operationId: createConfirmAccount
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043F\u043E\
+        \u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u044F \u043F\u043E\
+        \u0447\u0442\u043E\u0432\u043E\u0433\u043E \u0430\u0434\u0440\u0435\u0441\u0430"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/user/login:
+    post:
+      operationId: createLoginAccount
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u0430\u0432\
+        \u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u0438 \u043F\u043E\u043B\u044C\
+        \u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+  /api/v1/user/password_reset:
+    post:
+      operationId: createEmail
+      description: 'An Api View which provides a method to request a password reset
+        token based on an e-mail address
+
+
+        Sends a signal reset_password_token_created when a reset token was created'
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Email'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Email'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Email'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Email'
+          description: ''
+      tags:
+      - api
+  /api/v1/user/password_reset/confirm:
+    post:
+      operationId: createPasswordToken
+      description: An Api View which provides a method to reset a password based on
+        a unique token
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PasswordToken'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/PasswordToken'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/PasswordToken'
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PasswordToken'
+          description: ''
+      tags:
+      - api
+  /api/v1/partner/update:
+    post:
+      operationId: createPartnerUpdate
+      description: "\u041A\u043B\u0430\u0441\u0441 \u0434\u043B\u044F \u043E\u0431\
+        \u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u043F\u0440\u0430\u0439\u0441\
+        \u0430 \u043E\u0442 \u043F\u043E\u0441\u0442\u0430\u0432\u0449\u0438\u043A\
+        \u0430"
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: {}
+          application/x-www-form-urlencoded:
+            schema: {}
+          multipart/form-data:
+            schema: {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema: {}
+          description: ''
+      tags:
+      - api
+components:
+  schemas:
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 40
+      required:
+      - name
+    Shop:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        name:
+          type: string
+          maxLength: 50
+        url:
+          type: string
+          format: uri
+          nullable: true
+          maxLength: 200
+          pattern: "^(?:[a-z0-9.+-]*)://(?:[^\\s:@/]+(?::[^\\s:@/]*)?@)?(?:(?:25[0-5]|2[0-4]\\\
+            d|[0-1]?\\d?\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|[0-1]?\\d?\\d)){3}|\\[[0-9a-f:.]+\\\
+            ]|([a-z\xA1-\uFFFF0-9](?:[a-z\xA1-\uFFFF0-9-]{0,61}[a-z\xA1-\uFFFF0-9])?(?:\\\
+            .(?!-)[a-z\xA1-\uFFFF0-9-]{1,63}(?<!-))*\\.(?!-)(?:[a-z\xA1-\uFFFF-]{2,63}|xn--[a-z0-9]{1,59})(?<!-)\\\
+            .?|localhost))(?::\\d{2,5})?(?:[/?#][^\\s]*)?\\z"
+        state:
+          type: boolean
+        user:
+          type: integer
+          nullable: true
+      required:
+      - name
+    ProductInfo:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        model:
+          type: string
+          maxLength: 80
+        product:
+          type: object
+          properties:
+            name:
+              type: string
+              maxLength: 80
+            category:
+              type: string
+              readOnly: true
+          required:
+          - name
+          readOnly: true
+        shop:
+          type: integer
+        quantity:
+          type: integer
+        price:
+          type: integer
+        price_rrc:
+          type: integer
+        product_parameters:
+          type: array
+          items:
+            type: object
+            properties:
+              parameter:
+                type: string
+                readOnly: true
+              value:
+                type: string
+                maxLength: 100
+            required:
+            - value
+          readOnly: true
+      required:
+      - quantity
+      - price
+      - price_rrc
+    Email:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+      required:
+      - email
+    PasswordToken:
+      type: object
+      properties:
+        password:
+          type: string
+        token:
+          type: string
+      required:
+      - password
+      - token
