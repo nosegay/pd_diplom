@@ -5,6 +5,7 @@ from django.core.validators import URLValidator
 from django.db.models import Q, Sum, F
 from django.http import JsonResponse
 from requests import get
+from rest_framework import viewsets
 from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -36,13 +37,15 @@ class ShopView(ListAPIView):
     serializer_class = ShopSerializer
 
 
-class ProductInfoView(APIView):
+class ProductInfoView(viewsets.ReadOnlyModelViewSet):
     """
     Класс для поиска товаров
     """
     throttle_scope = 'anon'
+    serializer_class = ProductInfoSerializer
+    ordering = ('product',)
 
-    def get(self, request, *args, **kwargs):
+    def get_queryset(self, request, *args, **kwargs):
 
         query = Q(shop__state=True)
         shop_id = request.query_params.get('shop_id')
@@ -55,14 +58,10 @@ class ProductInfoView(APIView):
             query = query & Q(product__category_id=category_id)
 
         # фильтруем и отбрасываем дуликаты
-        queryset = ProductInfo.objects.filter(
+        return ProductInfo.objects.filter(
             query).select_related(
             'shop', 'product__category').prefetch_related(
             'product_parameters__parameter').distinct()
-
-        serializer = ProductInfoSerializer(queryset, many=True)
-
-        return Response(serializer.data)
 
 
 class PartnerUpdate(APIView):

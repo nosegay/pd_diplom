@@ -8,6 +8,7 @@ from ujson import loads as load_json
 from customers.models import Order, OrderItem, Contact
 from customers.serializers import OrderItemSerializer, OrderSerializer, ContactSerializer
 from customers.signals import new_order
+from customers.tasks import new_order_task
 
 
 class BasketView(APIView):
@@ -214,7 +215,9 @@ class OrderView(APIView):
                     return JsonResponse({'Status': False, 'Errors': 'Неправильно указаны аргументы'})
                 else:
                     if is_updated:
-                        new_order.send(sender=self.__class__, user_id=request.user.id)
+                        # new_order.send(sender=self.__class__, user_id=request.user.id)
+                        new_order_task.delay(user_id=request.user.id)
+
                         return JsonResponse({'Status': True})
 
         return JsonResponse({'Status': False, 'Errors': 'Не указаны все необходимые аргументы'})
